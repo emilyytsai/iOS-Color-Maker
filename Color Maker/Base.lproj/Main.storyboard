@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="iPad13_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Color_Maker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7tD-rs-6Ny">
+                                <rect key="frame" x="103" y="468" width="147" height="30"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="aLv-vP-gdr"/>
+                                    <constraint firstAttribute="height" constant="29" id="pLN-BG-1Ua"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="slider1Changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="tca-pU-juo"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YtM-P1-GGX">
+                                <rect key="frame" x="103" y="591" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Tff-wt-c07"/>
+                                    <constraint firstAttribute="width" constant="143" id="W4Y-UK-XEx"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="slider3Changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="wZU-ja-R3W"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5y2-lC-zA5">
+                                <rect key="frame" x="103" y="529" width="147" height="30"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="VFV-7w-Kib"/>
+                                    <constraint firstAttribute="height" constant="29" id="g5V-19-YtQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="slider2Changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="EHu-nL-XDu"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVX-FT-mSz">
+                                <rect key="frame" x="33" y="529" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="JbH-dI-aZr"/>
+                                    <constraint firstAttribute="width" constant="47" id="LFK-is-7uV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="greenSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6G6-Mm-BW0"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaV-71-SGb">
+                                <rect key="frame" x="33" y="466" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Tbq-cj-Nxk"/>
+                                    <constraint firstAttribute="width" constant="47" id="yR0-Z5-pnd"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <color key="onTintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="switch1Changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="HXV-WP-n9d"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSH-Ve-5D7">
+                                <rect key="frame" x="33" y="591" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="FOc-0j-g8T"/>
+                                    <constraint firstAttribute="height" constant="31" id="PzV-Fm-2tc"/>
+                                </constraints>
+                                <color key="onTintColor" systemColor="systemBlueColor"/>
+                                <connections>
+                                    <action selector="blueSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Mi-H3-LHq"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nph-mD-qfQ" userLabel="Reset Button">
+                                <rect key="frame" x="106" y="694" width="180" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="1ka-jz-naO"/>
+                                    <constraint firstAttribute="height" constant="84" id="duE-6X-5U2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="RESET">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="29"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButtonActive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuc-w4-DaG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fjG-gV-keR">
+                                <rect key="frame" x="270" y="466" width="90" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="tWV-I0-Gaa"/>
+                                    <constraint firstAttribute="width" constant="90" id="u6S-KW-Yck"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="text1Changed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7W8-5z-OCB"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U88-ec-zve">
+                                <rect key="frame" x="48" y="169" width="297" height="227"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="FXQ-LM-Uie"/>
+                                    <constraint firstAttribute="height" constant="227" id="XXd-nP-2Qg"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBq-7w-xW9">
+                                <rect key="frame" x="270" y="524" width="90" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="0x2-34-W6l"/>
+                                    <constraint firstAttribute="height" constant="34" id="m7o-KH-lJ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="text2Changed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="9At-wa-NNl"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vxm-0M-egP">
+                                <rect key="frame" x="270" y="588" width="90" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="a5F-cI-2jU"/>
+                                    <constraint firstAttribute="height" constant="34" id="ekO-PC-hbz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="text3Changed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="m9q-H4-nrK"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Color Picker" borderStyle="roundedRect" textAlignment="center" minimumFontSize="31" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-qb-tGe">
+                                <rect key="frame" x="126" y="91" width="141" height="38"/>
+                                <color key="backgroundColor" red="0.90405525128865982" green="0.90405525128865982" blue="0.90405525128865982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="6Sk-BS-WDQ"/>
+                                    <constraint firstAttribute="width" constant="141" id="N5w-2W-zpl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="ResetButton" destination="nph-mD-qfQ" id="ESi-Ti-uvc"/>
+                        <outlet property="colorBox" destination="U88-ec-zve" id="Ple-Nn-9Nr"/>
+                        <outlet property="colorPickerLabel" destination="P5p-qb-tGe" id="xDZ-W9-FBp"/>
+                        <outlet property="slider1" destination="7tD-rs-6Ny" id="7ko-E0-a6F"/>
+                        <outlet property="slider2" destination="5y2-lC-zA5" id="rH7-KA-EhP"/>
+                        <outlet property="slider3" destination="YtM-P1-GGX" id="1CB-EF-r0s"/>
+                        <outlet property="switch1" destination="uaV-71-SGb" id="Zyv-ZP-0Da"/>
+                        <outlet property="switch2" destination="iVX-FT-mSz" id="DfS-uc-CTb"/>
+                        <outlet property="switch3" destination="cSH-Ve-5D7" id="Pq7-gO-e9A"/>
+                        <outlet property="text1" destination="fjG-gV-keR" id="7Rj-MQ-rf8"/>
+                        <outlet property="text2" destination="eBq-7w-xW9" id="eHq-hn-cMT"/>
+                        <outlet property="text3" destination="Vxm-0M-egP" id="SMU-Ib-JXi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
