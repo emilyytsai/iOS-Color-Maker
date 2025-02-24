@@ -1,9 +1,3 @@
-# Assignment 2: Persistence
+# Color Maker
 
-My submission for CPSC 411, Section 03, Assignment 2: Persistence
-
-# My Information
-
-* Name: Emily Tsai
-* CWID: 885513796
-* Email: emilytsai@csu.fullerton.edu
+Color Maker is an iOS application built with Xcode and Swift that lets users create custom colors using switches, sliders, and text fields. This application was created for the Fall 2024 Mobile Device Application Programming class at California State University, Fullerton.
